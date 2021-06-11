@@ -50,3 +50,19 @@ header {
 .background-item {
   margin-bottom: 5px;
 }
+
+.story__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin: 5px;
+}
+
+.story__picture:nth-child(odd) {
+  background-color: blue;
+  height: 166px;
+}
+.story__picture:nth-child(even) {
+  background-color: coral;
+  height: 166px;
+}
