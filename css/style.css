@@ -1,0 +1,90 @@
+@import "./variables.css";
+@import "./menu.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.portfolio-container {
+  height: 500vh;
+}
+
+header {
+  /* sticky need starting position */
+  position: sticky;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+  background-color: white;
+}
+
+.header__name {
+  text-align: right;
+  margin: 0 auto;
+}
+
+#jsMenuBar {
+  cursor: pointer;
+}
+.introduction {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+
+.introduction__column:last-child {
+  margin-left: 15px;
+}
+
+.profile-picture {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.background {
+  margin: 15px;
+  list-style-type: none;
+}
+
+.background-item {
+  margin-bottom: 5px;
+}
+
+.story__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  margin: 5px;
+}
+
+.story__picture:nth-child(odd) {
+  background-color: blue;
+  height: 166px;
+}
+.story__picture:nth-child(even) {
+  background-color: coral;
+  height: 166px;
+}
+
+.show-nav {
+  transform: translateX(-1px);
+}
