@@ -17,7 +17,6 @@
   <body>
     <div class="portfolio-container" id="introduction">
       <nav class="menu">
-        
         <ul class="menu__list">
           <li>
             <a class="anchor" href="#introduction">소개</a>
@@ -26,7 +25,7 @@
             <a class="anchor"  href="#schedule">강의 스케쥴</a>
           </li>
           <li>
-            <a href="#내용3">내용 3</a>
+            <a href="#사진">사진</a>
           </li>
           <li>내용 4</li>
         </ul>
@@ -38,6 +37,7 @@
               <i class="fas fa-bars" id="jsMenuBar"></i>
             </div>
       </header>
+
       <div class="introduction" >
         <div class="introduction__column">
           <img class="profile-picture" src="./image/jina.png" alt="" />
@@ -49,13 +49,13 @@
         </div>
       </div>
       
-
       <hr />
+
       <section></section>
 
       <hr />
 
-      <div class="schedule__container" id="schedule">
+      <div class="shcedule" id="schedule">
         <h2>강의 스케쥴</h2>
         <ol class="shcedule__list">
           <li class="shcedule">Lorem ipsum dolor sit amet.</li>
@@ -103,14 +103,62 @@
           <li class="shcedule">Lorem ipsum dolor sit amet.</li>
           <li class="shcedule">Lorem ipsum dolor sit amet.</li>
         </ol>
-
-        <hr>
-        <h2 id="내용3">내용 3</h2>
       </div>
+      <hr>
+
+      <section class="pictures">
+      <h2 id="사진">사진</h2>
+
+      <div class="pictures-container">
+        <div class="pictureToModal">
+          <img class="jsToModal" src="./image/jina-img1.png" alt="jina-img1" data-index="0";>
+          <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, et.</span>
+        </div>
+      
+        <div class="pictureToModal">
+          <img class="jsToModal" src="./image/jina-img2.png" alt="jina-img1" data-index="1">
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="pictures__modal-container--A modal .show-modal " data-index="0">
+        <div class="pictures__modal">
+          <div class="jsCloseModal" >
+            <i class="fas fa-times fa-3x" data-index="0"></i>
+          </div>
+          <!-- carousel inside of modal -->
+          <div class="pictures__carousel" id="carousel">
+            <i class="fas fa-chevron-circle-left"></i>
+            <div class="carousel__track-container">
+              <ul class="carousel__track">
+                <li class="carousel__slide"><img src="./image/jina-img1.png" class="carousel__img"></li>
+                <li class="carousel__slide"><img src="./image/jina-img2.png" class="carousel__img"></li>
+                <li class="carousel__slide"><img src="./image/jina-img3.png" class="carousel__img"></li>
+              </ul>
+            </div>
+            <i class="fas fa-chevron-circle-left"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="pictures__modal-container--B modal .show-modal" data-index="1">
+        <div class="pictures__modal" >
+          <div class="jsCloseModal" >
+            <i class="fas fa-times fa-3x" data-index="1"></i>
+          </div>
+          <!-- carousel inside of modal -->
+          <div class="pictures__carousel" id="carousel">
+            <div class="carousel__slide">bbbbbbbbbbbbbbb</div>
+          </div>
+        </div>
+      </div>
+      </section>
 
      
 
   </div>
-    <script src="index.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
