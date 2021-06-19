@@ -1,35 +1,85 @@
 .pictures__carousel {
   position: relative;
   height: 500px;
-  width: 95%;
+  width: 500px;
   margin: 0 auto;
   top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__img {
+  height: 100%;
+  width: 80%;
+  object-fit: cover;
 }
 
 .carousel__track-container {
-  background-color: royalblue;
-  height: 100%;
+  background-color: var(--yellowish-white);
+  height: 90%;
+  width: 450px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel__track {
   padding: 0;
   margin: 0;
-  height: 100%;
+
+  list-style: none;
+  height: 90%;
   position: relative;
+  transition: transform 250ms ease-in;
 }
 
 .carousel__slide {
   position: absolute;
   top: 0;
+  bottom: 0;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__button {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.prevBtn {
+  left: 7px;
+}
+
+.nextBtn {
+  right: 7px;
+}
+
+/* 
+
+.pictures__carousel {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  top: 100px;
+  border: 5px solid black;
+}
+
+.carousel__track {
+  display: flex;
   width: 100%;
+  height: 500px;
 }
-.carousel__slide {
-  left: auto;
-}
+
 .carousel__img {
-  width: 100%;
+  width: 2000%;
   height: 100%;
-  object-fit: cover;
-}
+} */
