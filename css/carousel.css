@@ -52,34 +52,19 @@
   transform: translateY(-50%);
   cursor: pointer;
   color: rgba(0, 0, 0, 0.4);
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
 }
 
 .prevBtn {
-  left: 7px;
+  left: 6px;
 }
 
 .nextBtn {
-  right: 7px;
+  right: 6px;
 }
 
-/* 
-
-.pictures__carousel {
-  width: 70%;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  top: 100px;
-  border: 5px solid black;
+.hideBtn {
+  display: none;
 }
-
-.carousel__track {
-  display: flex;
-  width: 100%;
-  height: 500px;
-}
-
-.carousel__img {
-  width: 2000%;
-  height: 100%;
-} */

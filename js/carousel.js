@@ -1,64 +1,60 @@
-// const modalCheck = document.querySelectorAll(".modal");
-// let slideWidth;
+let slideWidth;
 
-// const carousel = (id) => {
-//   const track = document.querySelector(id + " .carousel__track");
-//   const slides = Array.from(track.children);
-//   const prevBtn = document.querySelector(id + " .prevBtn");
-//   const nextBtn = document.querySelector(id + " .nextBtn");
+const carousel = (id) => {
+  const track = document.querySelector(id + " .carousel__track");
+  const slides = Array.from(track.children);
+  const prevBtn = document.querySelector(id + " .prevBtn");
+  const nextBtn = document.querySelector(id + " .nextBtn");
+  const slideLen = slides.length;
 
-//   const setSlidePosition = (slide, index) => {
-//     slide.style.left = `${slideWidth * index}px`;
-//   };
-//   const handleModalCheck = () => {
-//     slides.forEach(setSlidePosition);
-//     return (slideWidth = slides[0].getBoundingClientRect().width);
-//   };
+  // Retrieve width of a slide from css value
+  slideWidth = parseInt(
+    window.getComputedStyle(slides[0]).getPropertyValue("width")
+  );
+  // Set width of carousel track(number of slide x width of a slide)
+  track.style.width = `${slideLen * slideWidth}px`;
 
-//   const moveToSlide = (track, currentSlide, targetSlide) => {
-//     track.style.transform = `translateX(-${targetSlide.style.left})`;
-//     currentSlide.classList.remove("current-slide");
-//     targetSlide.classList.add("current-slide");
-//   };
+  const setSlidePosition = (slide, index) => {
+    slide.style.left = `${slideWidth * index}px`;
+  };
+  slides.forEach(setSlidePosition);
 
-//   prevBtn.addEventListener("click", (e) => {
-//     const currentSlide = track.querySelector(".current-slide");
-//     const prevSlide = currentSlide.previousElementSibling;
-//     const prevIndex = slides.findIndex((slide) => slide === prevSlide);
-//     moveToSlide(track, currentSlide, prevSlide);
-//   });
+  const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = `translateX(-${targetSlide.style.left})`;
+    currentSlide.classList.remove("current-slide");
+    targetSlide.classList.add("current-slide");
+  };
 
-//   nextBtn.addEventListener("click", (e) => {
-//     const currentSlide = track.querySelector(".current-slide");
-//     const nextSlide = currentSlide.nextElementSibling;
-//     const nextIndex = slides.findIndex((slide) => slide === nextSlide);
-//     moveToSlide(track, currentSlide, nextSlide);
-//   });
+  // Button Function //
+  const hideShowBtn = (index) => {
+    if (index === 0) {
+      prevBtn.classList.add("hideBtn");
+      nextBtn.classList.remove("hideBtn");
+    } else if (index === slideLen - 1) {
+      prevBtn.classList.remove("hideBtn");
+      nextBtn.classList.add("hideBtn");
+    } else {
+      prevBtn.classList.remove("hideBtn");
+      nextBtn.classList.remove("hideBtn");
+    }
+  };
 
-//   modalCheck.forEach(() => addEventListener("click", handleModalCheck));
-// };
-// carousel("#carousel-a");
+  prevBtn.addEventListener("click", (e) => {
+    const currentSlide = track.querySelector(".current-slide");
+    const prevSlide = currentSlide.previousElementSibling;
+    const prevIndex = slides.findIndex((slide) => slide === prevSlide);
+    moveToSlide(track, currentSlide, prevSlide);
+    hideShowBtn(prevIndex);
+  });
 
-// const modalCheck = document.querySelectorAll(".modal");
-// let size;
+  nextBtn.addEventListener("click", (e) => {
+    const currentSlide = track.querySelector(".current-slide");
+    const nextSlide = currentSlide.nextElementSibling;
+    const nextIndex = slides.findIndex((slide) => slide === nextSlide);
+    moveToSlide(track, currentSlide, nextSlide);
+    hideShowBtn(nextIndex);
+  });
+};
 
-// const carousel = (id) => {
-//   const track = document.querySelector(id + " .carousel__track");
-//   const slide = track.querySelectorAll(".carousel__track img");
-
-//   const prevBtn = document.querySelector(id + " .prevBtn");
-//   const nextBtn = document.querySelector(id + " .nextBtn");
-
-//   let counter = 1;
-
-//   const handleModalCheck = () => {
-//     size = slide[0].clientWidth;
-//     console.log(size);
-//   };
-
-//   track.getElementsByClassName.transform = `translateX(${-size * counter}px)`;
-
-//   modalCheck.forEach(() => addEventListener("resize", handleModalCheck));
-// };
-
-// carousel("#carousel-a");
+carousel("#carousel-a");
+carousel("#carousel-b");
