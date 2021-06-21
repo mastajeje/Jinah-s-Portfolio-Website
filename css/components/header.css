@@ -1,0 +1,17 @@
+header {
+  /* sticky need starting position */
+  position: sticky;
+  display: flex;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+  background-color: var(--yellowish-white);
+  font-size: 36px;
+}
+
+.header__name {
+  text-align: right;
+  margin: 0 auto;
+}

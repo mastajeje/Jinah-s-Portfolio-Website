@@ -1,0 +1,51 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.intro__column:first-child {
+}
+
+.intro__column:last-child {
+  margin: 0 15px;
+  background-color: var(--yellowish-white);
+  padding: 25px;
+  min-height: 200px;
+}
+
+.profile-picture {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px double var(--light-purple);
+}
+
+.intro__content {
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+@media screen and (min-width: 720px) {
+  .intro__column:last-child {
+    margin: 0 15px;
+    background-color: var(--yellowish-white);
+    padding: 30px;
+    width: 90%;
+  }
+
+  .intro__content {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .intro__column:last-child {
+    margin: 0 15px;
+    background-color: var(--yellowish-white);
+    padding: 30px;
+    width: 60%;
+  }
+}

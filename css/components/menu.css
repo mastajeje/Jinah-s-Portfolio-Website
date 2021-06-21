@@ -26,10 +26,14 @@
 
 .menu__icon {
   font-size: 25px;
-  margin: 10px;
-  padding-top: 5px;
+  margin: auto 10px;
+
   color: white;
-  padding: 10px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -40,4 +44,19 @@
   width: 80%;
   text-align: right;
   padding-bottom: 5px;
+}
+
+#jsMenuBar {
+  cursor: pointer;
+}
+
+.show-nav {
+  transform: translateX(0px);
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }

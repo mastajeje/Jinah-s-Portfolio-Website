@@ -1,4 +1,12 @@
-let slideWidth;
+// To add Carousel Modal //
+// 1. Add img to toModal (don't forget to add data-index)
+// 2. Add whole modal part(it includes carousel in it), again don' forget
+//    to add data-index to modal and close button
+// 3. Add id to carousel (to use as an argument for carousel function)
+// 4. Add Pictures
+// 5. Initialize the carousel function with id
+
+// let slideWidth;
 
 const carousel = (id) => {
   const track = document.querySelector(id + " .carousel__track");
@@ -8,7 +16,7 @@ const carousel = (id) => {
   const slideLen = slides.length;
 
   // Retrieve width of a slide from css value
-  slideWidth = parseInt(
+  const slideWidth = parseInt(
     window.getComputedStyle(slides[0]).getPropertyValue("width")
   );
   // Set width of carousel track(number of slide x width of a slide)
@@ -58,3 +66,4 @@ const carousel = (id) => {
 
 carousel("#carousel-a");
 carousel("#carousel-b");
+carousel("#carousel-c");

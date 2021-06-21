@@ -1,4 +1,4 @@
-.pictures__carousel {
+.carousel {
   position: relative;
   height: 500px;
   width: 500px;
@@ -32,7 +32,7 @@
   list-style: none;
   height: 90%;
   position: relative;
-  transition: transform 250ms ease-in;
+  transition: transform 300ms ease-in;
 }
 
 .carousel__slide {
