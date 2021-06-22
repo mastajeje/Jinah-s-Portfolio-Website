@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   height: 500px;
-  width: 500px;
+  /* width: 500px; */
   margin: 0 auto;
   top: 100px;
   display: flex;
@@ -12,6 +12,7 @@
   height: 100%;
   width: 80%;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 .carousel__track-container {
@@ -28,7 +29,6 @@
 .carousel__track {
   padding: 0;
   margin: 0;
-
   list-style: none;
   height: 90%;
   position: relative;
@@ -67,4 +67,24 @@
 
 .hideBtn {
   display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .carousel {
+    width: 700px;
+    height: 650px;
+  }
+  .carousel__track-container {
+    width: 650px;
+  }
+
+  .carousel__slide {
+    width: 650px;
+  }
+}
+
+/* for desktop */
+@media screen and (min-width: 1200px) {
+  .carousel__track-container {
+  }
 }

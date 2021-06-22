@@ -4,6 +4,7 @@
 /* Section */
 @import "./sections/introduction.css";
 @import "./sections/youtube.css";
+@import "./sections/articles.css";
 
 /* Components */
 @import "./components/menu.css";
@@ -18,7 +19,7 @@
   font-family: "Noto Serif KR", serif;
 }
 
-a {
+body a {
   color: var(--main-color);
   text-decoration: none;
 }
@@ -58,6 +59,18 @@ hr {
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+  }
+  .portfolio-container {
+    width: 80%;
+  }
   .h2-container {
     margin-left: 15%;
     font-size: 1.2rem;

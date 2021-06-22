@@ -9,6 +9,7 @@
 // let slideWidth;
 
 const carousel = (id) => {
+  const container = document.querySelector(id + " .carousel__track-container");
   const track = document.querySelector(id + " .carousel__track");
   const slides = Array.from(track.children);
   const prevBtn = document.querySelector(id + " .prevBtn");
@@ -19,6 +20,11 @@ const carousel = (id) => {
   const slideWidth = parseInt(
     window.getComputedStyle(slides[0]).getPropertyValue("width")
   );
+
+  const handleResize = () => {
+    slideWidth = container.getBoundingClientRect.width;
+  };
+
   // Set width of carousel track(number of slide x width of a slide)
   track.style.width = `${slideLen * slideWidth}px`;
 
@@ -62,6 +68,8 @@ const carousel = (id) => {
     moveToSlide(track, currentSlide, nextSlide);
     hideShowBtn(nextIndex);
   });
+
+  container.addEventListener("resize", handleResize);
 };
 
 carousel("#carousel-a");

@@ -5,10 +5,11 @@ header {
   top: 0;
   align-items: center;
   justify-content: center;
-  padding-bottom: 15px;
+
   border-bottom: 2px solid black;
   background-color: var(--yellowish-white);
   font-size: 36px;
+  z-index: 2;
 }
 
 .header__name {
