@@ -1,0 +1,10 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts img {
+  width: 2.5rem;
+  margin-right: 15px;
+  /* height: 1rem; */
+}

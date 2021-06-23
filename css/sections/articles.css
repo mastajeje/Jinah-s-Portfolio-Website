@@ -1,4 +1,5 @@
 .article {
   border: 1px solid black;
   margin: 5px;
+  list-style-type: none;
 }

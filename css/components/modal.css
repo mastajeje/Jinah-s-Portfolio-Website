@@ -17,7 +17,6 @@
   height: 250px;
   margin-bottom: 30px;
   cursor: pointer;
-  border: 4px solid black;
   border-radius: 14px;
 }
 .toModal img {
@@ -52,13 +51,14 @@
 
 @media screen and (min-width: 720px) {
   .toModal {
-    height: 350px;
+    height: 250px;
+    width: 45%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .toModal {
-    height: 550px;
+    height: 350px;
     width: 45%;
   }
 }

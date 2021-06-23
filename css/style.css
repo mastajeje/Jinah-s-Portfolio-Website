@@ -5,6 +5,7 @@
 @import "./sections/introduction.css";
 @import "./sections/youtube.css";
 @import "./sections/articles.css";
+@import "./sections/contact.css";
 
 /* Components */
 @import "./components/menu.css";
@@ -47,18 +48,44 @@ h2::before {
 
 .h2-container {
   border: 1px solid black;
-  margin: 10px;
+  margin: 1.5em 1em;
   width: 167px;
   text-align: center;
   background-color: var(--yellowish-white);
   box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+  font-size: 1.3rem;
+}
+
+.text-box {
+  margin: 0 auto;
+  background-color: var(--yellowish-white);
+  padding: 25px;
+  min-height: 200px;
+  width: 90%;
+}
+
+p {
+  max-width: 70ch;
 }
 
 hr {
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
-@media screen and (min-width: 1200px) {
+footer {
+  background-color: var(--yellowish-white);
+  height: 60px;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 720px) {
+  * {
+    transition: 200ms ease-in-out;
+  }
   body {
     display: flex;
     justify-content: center;
@@ -72,7 +99,16 @@ hr {
     width: 80%;
   }
   .h2-container {
-    margin-left: 15%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+  .text-box {
+    padding: 2em;
+    max-width: 59.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-container {
+    width: 60%;
   }
 }
