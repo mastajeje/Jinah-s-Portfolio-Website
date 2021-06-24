@@ -75,3 +75,4 @@ const carousel = (id) => {
 carousel("#carousel-a");
 carousel("#carousel-b");
 carousel("#carousel-c");
+carousel("#carousel-d");

@@ -10,13 +10,6 @@
   margin: 10px;
 }
 
-/* .intro__column:last-child { 
- margin: 0 auto;
-  background-color: var(--yellowish-white);
-  padding: 25px;
-  min-height: 200px;
-  width: 90%; 
-} */
 
 .profile-picture {
   width: 250px;
@@ -25,11 +18,11 @@
   border: 5px double var(--light-purple);
 }
 
-.intro__content {
+/* .intro__content {
   font-size: 1.1rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
   font-family: "Noto Serif KR", serif;
-}
+} */
 
 @media screen and (min-width: 720px) {
   /* .intro__column:last-child {

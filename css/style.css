@@ -52,21 +52,22 @@ h2::before {
   width: 167px;
   text-align: center;
   background-color: var(--yellowish-white);
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   font-size: 1.3rem;
 }
 
 .text-box {
-  margin: 0 auto;
+  margin: 1.5rem auto;
   background-color: var(--yellowish-white);
   padding: 25px;
-  min-height: 200px;
+  line-height: 1.8rem;
   width: 90%;
+  font-family: "Noto Serif KR", serif;
 }
 
-p {
+/* p {
   max-width: 70ch;
-}
+} */
 
 hr {
   margin: 10px 0;
@@ -103,7 +104,9 @@ footer {
   }
   .text-box {
     padding: 2em;
-    max-width: 59.5rem;
+    max-width: 50rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 }
 
