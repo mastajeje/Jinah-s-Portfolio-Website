@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -17,7 +21,7 @@
     />
     <title>Jinah</title>
   </head>
-  <body>
+  <body id="intro">
     <header>
       <h1 class="header__name">RDH. JINA</h2>
         <div class="menu__icon">
@@ -43,7 +47,7 @@
         </li>
       </ul>
     </nav>
-    <div class="portfolio-container" id="intro">
+    <main class="portfolio-container" >
       
 
       
@@ -53,10 +57,10 @@
           <img class="profile-picture" src="./image/profile-picture.jpg" alt="" />
         </div>
         <div class="intro__column text-box">
-          <p class="intro__content ">안녕하세요, 치과위생사 진아입니다:-)!</p>
+          <p class="intro__content ">안녕하세요, 치과위생사 진아입니다:-)!<br><br></p>
           <p class="intro__content">저는 임상치과 현장에서 근무하면서 치과세미나 또는 기획인터뷰와 치과위생사스터디 등을 진행하고 있는데요, 치과위생사의 다양한 매력과 능력을 치과종사자 및 대중에게 알리기 위한 활동들을 하려고 노력하고 있습니다:-)
             직장인 보다는 '직업인'이 하고싶고, 
-            정해진 일 보다는 '나의 일'을 하고싶은 그런사람 입니다:-0/p>
+            정해진 일 보다는 '나의 일'을 하고싶은 그런사람 입니다 :-0/p>
           <!-- <p class="intro__content text-box"></p> -->
         </div>
       </div>
@@ -73,10 +77,15 @@
             <img class="jsToModal" src="./image/asManager-toModal.jpg" alt="jina-img1" data-index="0";>
           </div>
           <div class="text-box">
-            <p>연세인스타일치과에서 실장으로 근무하고 있습니다^^ 일반,교정,임플란트진료의 치과위생사 업무 및 진료상담과 구강보건교육과 예방관리를 하며, 직원교육 및 마케팅 업무 등을 함께하고 있어요:-)!</p>
+            <p>연세인스타일치과에서 실장으로 근무하고 있습니다^^ 일반,교정,임플란트진료의 치과위생사 업무 및 진료상담과 구강보건교육과 예방관리를 하며, 직원교육 및 마케팅 업무 등을 함께하고 있어요 :-)!</p>
           </div>
+        </div>
+        <div class="toModal__container">
           <div class="toModal">
             <img class="jsToModal" src="./image/prevention-toModal.jpg" alt="jina-img1" data-index="1">
+          </div>
+          <div class="text-box">
+            <p>치과위생사가 주도적으로 진행하는 예방관리프로그램을 운영하여, 세균막관리 및 구강보건교육을 함께 하고 있습니다 :-)</p>
           </div>
         </div>
       </section>
@@ -90,11 +99,12 @@
         </div>
       </div>
       <div class="toModal__container">
-        
         <div class="toModal">
           <img class="jsToModal" src="./image/branding-toModal.jpg" alt="branding picture" data-index="3">
         </div>
-
+        <div class="text-box">
+          <p>instagram을 기반으로, 퍼스널브랜딩을  목적으로 하는 브랜딩세미나를 진행하고 있답니다 :-0!</p>
+        </div>
       </div>
 
     </section>
@@ -120,10 +130,10 @@
           <h3>Article - 국제치위생 심포지움을 다녀와서</h3>
           <a href="http://news.kdha.or.kr/news/articleView.html?idxno=10210">http://news.kdha.or.kr/news/articleView.html?idxno=10210</a>
         </li>
-        
-
       </ul>
     </section>
+
+    <hr />
 
     <section class="youtube" >
       <div class="h2-container"><h2 id="유튜브">유튜브</h2></div>
@@ -209,9 +219,9 @@
                     <i class="fas fa-chevron-circle-left fa-2x  "></i>
                     </button>
                   <ul class="carousel__track">
-                    <li class="carousel__slide current-slide"><img src="./image/jina-img4.jpg" class="carousel__img"></li>
-                    <li class="carousel__slide"><img src="./image/jina-img5.jpg" class="carousel__img"></li>
-                    <li class="carousel__slide"><img src="./image/jina-img6.jpg" class="carousel__img"></li>
+                    <li class="carousel__slide current-slide"><img src="./image/prevention-img1.jpg" class="carousel__img"></li>
+                    <li class="carousel__slide"><img src="./image/prevention-img2.jpg" class="carousel__img"></li>
+                   
                   </ul>
                   <button class="nextBtn carousel__button">
                     <i class="fas fa-chevron-circle-right fa-2x  "></i>
@@ -233,9 +243,8 @@
                     <i class="fas fa-chevron-circle-left fa-2x  "></i>
                   </button>
                   <ul class="carousel__track">
-                    <li class="carousel__slide current-slide"><img src="./image/jina-img1.png" class="carousel__img"></li>
-                    <li class="carousel__slide"><img src="./image/jina-img2.png" class="carousel__img"></li>
-                    <li class="carousel__slide"><img src="./image/jina-img3.png" class="carousel__img"></li>
+                    <li class="carousel__slide current-slide"><img src="./image/seminar-img1.jpg" class="carousel__img"></li>
+                    <li class="carousel__slide"><img src="./image/seminar-img2.jpg" class="carousel__img"></li>
                   </ul>
                   <button class="nextBtn carousel__button">
                     <i class="fas fa-chevron-circle-right fa-2x  "></i>
@@ -256,9 +265,8 @@
                     <i class="fas fa-chevron-circle-left fa-2x  "></i>
                   </button>
                   <ul class="carousel__track">
-                    <li class="carousel__slide current-slide"><img src="./image/jina-img1.png" class="carousel__img"></li>
-                    <li class="carousel__slide"><img src="./image/jina-img2.png" class="carousel__img"></li>
-                    <li class="carousel__slide"><img src="./image/jina-img3.png" class="carousel__img"></li>
+                    <li class="carousel__slide current-slide"><img src="./image/branding-img1.jpg" class="carousel__img"></li>
+                    <li class="carousel__slide"><img src="./image/branding-img2.jpg" class="carousel__img"></li>
                   </ul>
                   <button class="nextBtn carousel__button">
                     <i class="fas fa-chevron-circle-right fa-2x  "></i>
@@ -267,6 +275,7 @@
               </div>    
           </div>
     </div>
+  </main> 
   <footer>
     <div>박진아 <a href="mailto:Jina2390@hanmail.net">Jina2390@hanmail.net</a></div>
   </footer>

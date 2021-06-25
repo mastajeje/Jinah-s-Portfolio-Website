@@ -13,11 +13,12 @@
 }
 
 .toModal {
-  width: 70%;
+  width: 60%;
   height: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
   cursor: pointer;
   border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 .toModal img {
   width: 100%;
@@ -52,13 +53,13 @@
 @media screen and (min-width: 720px) {
   .toModal {
     height: 250px;
-    width: 45%;
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .toModal {
     height: 350px;
-    width: 45%;
+    width: 60%;
   }
 }
