@@ -37,6 +37,19 @@
   z-index: 5;
 }
 
+.modal__content {
+  position: relative;
+  top: 100px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.modal__content img {
+  max-width: 30em;
+}
+
 .show-modal {
   display: block;
 }

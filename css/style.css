@@ -6,6 +6,7 @@
 @import "./sections/youtube.css";
 @import "./sections/articles.css";
 @import "./sections/contact.css";
+@import "./sections/seminar.css";
 
 /* Components */
 @import "./components/menu.css";

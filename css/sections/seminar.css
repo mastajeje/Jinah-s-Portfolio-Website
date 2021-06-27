@@ -1,0 +1,18 @@
+.seminar__schedule {
+  height: 250px;
+  display: flex;
+  margin: 0 auto;
+  background-color: var(--yellowish-white);
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+  gap: 1em;
+}
+
+.seminar__poster {
+  height: 100%;
+}
+
+.seminar__poster img {
+  height: 100%;
+}
