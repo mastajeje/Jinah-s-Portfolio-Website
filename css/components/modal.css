@@ -13,7 +13,7 @@
 }
 
 .toModal {
-  width: 60%;
+  width: 70%;
   height: 250px;
   margin-bottom: 1.5rem;
   cursor: pointer;
@@ -52,6 +52,11 @@
 
 .show-modal {
   display: block;
+}
+
+.jsToModal:hover {
+  transform: scale(1.1);
+  transition: 500ms ease-in-out;
 }
 
 .jsCloseModal {

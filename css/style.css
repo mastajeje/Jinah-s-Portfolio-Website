@@ -21,8 +21,18 @@
   font-family: "Noto Serif KR", serif;
 }
 
+section {
+  padding: 3em 0;
+  margin: 3em 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 body {
   background-color: var(--light-purple);
+  width: 100%;
 }
 
 body a {
@@ -61,7 +71,7 @@ h2::before {
 
 .text-box {
   word-break: keep-all;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 2.5rem;
   background-color: var(--yellowish-white);
   padding: 25px;
@@ -76,15 +86,15 @@ h2::before {
   letter-spacing: 0.05em;
 }
 
-hr {
+/* hr {
   margin: 7rem 0;
-}
+} */
 
 footer {
   background-color: var(--yellowish-white);
   height: 60px;
   font-size: 14px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

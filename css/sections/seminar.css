@@ -1,18 +1,42 @@
+.seminar-schedule__container {
+  /* margin: 2em; */
+}
+
 .seminar__schedule {
   height: 250px;
   display: flex;
-  margin: 0 auto;
+  margin: 3.5em auto;
   background-color: var(--yellowish-white);
   padding: 10px;
   width: 90%;
+  max-width: 500px;
   border-radius: 10px;
   gap: 1em;
 }
 
 .seminar__poster {
   height: 100%;
+  /* max-width: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seminar__poster img {
   height: 100%;
+  width: 100%;
+  max-width: 200px;
+}
+
+@media screen and (min-width: 1200px) {
+  .seminar-schedule__container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .seminar__schedule {
+    height: 300px;
+    margin: 0;
+  }
 }
