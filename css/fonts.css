@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "BBTreeG_B";
+  src: url("../font/");
+  src: url("../font/?#iefix") format("embedded-opentype"),
+    url("../font/BBTreeGB.woff2") format("woff2"),
+    url("../font/BBTreeGB.woff") format("woff"),
+    url("../font/BBTreeGB.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BBTreeG_L";
+  src: url("../font/BBTreeGL.eot");
+  src: url("../font/BBTreeGL.eot?#iefix") format("embedded-opentype"),
+    url("../font/BBTreeGL.woff2") format("woff2"),
+    url("../font/BBTreeGL.woff") format("woff"),
+    url("../font/BBTreeGL.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BBTreeG_R";
+  src: url("../font/BBTreeGR.eot");
+  src: url("../font/BBTreeGR.eot?#iefix") format("embedded-opentype"),
+    url("../font/BBTreeGR.woff2") format("woff2"),
+    url("../font/BBTreeGR.woff") format("woff"),
+    url("../font/BBTreeGR.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Openas";
+  src: url("Openas.eot");
+  src: url("Openas.eot?#iefix") format("embedded-opentype"),
+    url("Openas.woff2") format("woff2"), url("Openas.woff") format("woff"),
+    url("Openas.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

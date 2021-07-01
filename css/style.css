@@ -1,5 +1,6 @@
 @import "./variables.css";
 @import "./media.css";
+@import "./fonts.css";
 
 /* Section */
 @import "./sections/introduction.css";
@@ -18,7 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Serif KR", serif;
+  /* font-family: "Noto Serif KR", serif; */
 }
 
 section {
@@ -47,7 +48,8 @@ h1 {
 
 h2 {
   font-family: "Nanum Brush Script", cursive;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  /* font-family: "Openas"; */
+  /* text-shadow: 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 h2::before {
