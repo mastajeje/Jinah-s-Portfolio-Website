@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Noto Serif KR", serif; */
 }
 
 section {
@@ -48,8 +47,6 @@ h1 {
 
 h2 {
   font-family: "Nanum Brush Script", cursive;
-  /* font-family: "Openas"; */
-  /* text-shadow: 1px 1px rgba(0, 0, 0, 0.5); */
 }
 
 h2::before {
@@ -87,10 +84,6 @@ h2::before {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   letter-spacing: 0.05em;
 }
-
-/* hr {
-  margin: 7rem 0;
-} */
 
 footer {
   background-color: var(--yellowish-white);
