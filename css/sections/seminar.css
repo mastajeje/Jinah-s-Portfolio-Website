@@ -10,22 +10,40 @@
   width: 90%;
   max-width: 500px;
   border-radius: 10px;
-  gap: 1em;
+  gap: 1.2em;
   font-family: "BBTreeG_R";
 }
 
 .seminar__poster {
   height: 100%;
-  /* max-width: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .seminar__poster img {
   height: 100%;
-  width: 100%;
-  max-width: 200px;
+  width: 165px;
+}
+
+.seminar__description ul {
+  margin-top: 1.6rem;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+}
+
+.seminar__description ul li {
+  margin-bottom: 8px;
+}
+
+.seminar__title {
+  color: var(--main-color);
+  text-decoration: underline;
+  font-size: 0.8rem;
+  font-weight: bolder;
 }
 
 @media screen and (min-width: 1200px) {
@@ -38,5 +56,14 @@
   .seminar__schedule {
     height: 300px;
     margin: 0;
+  }
+
+  .seminar__description ul {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .seminar__title {
+    font-size: 0.9rem;
   }
 }
