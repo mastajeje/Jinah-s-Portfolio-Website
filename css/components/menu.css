@@ -60,3 +60,18 @@
     height: 2.5rem;
   }
 }
+
+@media screen and (max-height: 380px) {
+  .menu__list {
+    /* margin: 10px 30px; */
+  }
+  .menu__list li {
+    margin: 13px;
+  }
+}
+
+@media screen and (min-height: 1100px) {
+  .menu {
+    bottom: -4%;
+  }
+}

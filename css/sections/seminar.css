@@ -46,6 +46,16 @@
   font-weight: bolder;
 }
 
+@media screen and (max-width: 470px) {
+  .seminar__schedule {
+    height: auto;
+  }
+  .seminar__poster img {
+    height: 250px;
+    margin: auto 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .seminar-schedule__container {
     display: flex;
