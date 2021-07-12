@@ -41,7 +41,9 @@
 }
 
 .modal__content img {
-  max-width: 30em;
+  width: 30rem;
+  /* width: 90%; */
+  /* min-width: 300px; */
 }
 
 .show-modal {
@@ -60,6 +62,13 @@
   top: 15px;
   cursor: pointer;
   z-index: 100;
+}
+
+@media screen and (max-width: 470px) {
+  .modal__content img {
+    width: 90vw;
+    /* min-width: 300px; */
+  }
 }
 
 @media screen and (min-width: 720px) {

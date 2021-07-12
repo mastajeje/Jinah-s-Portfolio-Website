@@ -82,8 +82,18 @@
   }
 }
 
-/* for desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 450px) {
+  .carousel {
+    width: 400px;
+    height: 300px;
+    /* margin-right: 5rem; */
+  }
   .carousel__track-container {
+    width: 320px;
+    margin-right: 1.5rem;
+  }
+
+  .carousel__slide {
+    width: 320px;
   }
 }
