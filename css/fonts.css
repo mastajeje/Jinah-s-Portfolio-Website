@@ -39,7 +39,7 @@
   src: url("../font/BBTreeGR.eot");
   src: url("../font/BBTreeGR.eot?#iefix") format("embedded-opentype"),
     url("../font/BBTreeGR.woff2") format("woff2"),
-    url("BBTreeGR.woff") format("woff"),
+    url("../font/BBTreeGR.woff") format("woff"),
     url("../font/BBTreeGR.ttf") format("truetype"),
     url("../font/BBTreeGR.svg#BBTreeGR") format("svg");
   font-weight: normal;
