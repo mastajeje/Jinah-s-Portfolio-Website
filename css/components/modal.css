@@ -33,7 +33,7 @@
 
 .modal__content {
   position: relative;
-  top: 100px;
+  top: 60px;
   width: 50%;
   margin: auto;
   display: flex;
@@ -41,7 +41,11 @@
 }
 
 .modal__content img {
-  width: 30rem;
+  /* width: 30rem; */
+  width: 90vw;
+  max-width: 600px;
+  max-height: 92vh;
+  /* height: 100%; */
   /* width: 90%; */
   /* min-width: 300px; */
 }
@@ -76,6 +80,10 @@
     height: 250px;
     width: 60%;
   }
+  /* .modal__content img {
+    width: 92vw;
+    max-height: 800px;
+  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -83,4 +91,12 @@
     height: 400px;
     width: 60%;
   }
+  .modal__content {
+    top: 2rem;
+    overflow-y: auto;
+  }
+  /* .modal__content img {
+    width: 92%;
+    max-height: 800px;
+  } */
 }
