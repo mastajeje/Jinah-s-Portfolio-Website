@@ -2,7 +2,7 @@
 
 ### Project <a href="https://flexing1010.github.io/Jinah-s-Portfolio-Website/">사이트 바로가기</a>
 
-프리랜서 활동을 준비중인 치과위생사 박진아님의 포트폴리오 사이트 입니다
+프리랜서 활동을 준비중인 치과위생사 박진아님의 요청으로 만든 포트폴리오 사이트 입니다
 
 - 자바스크립트과, HTML, CSS를 사용하여 만든 사이트입니다.
 
