@@ -1,10 +1,10 @@
-# <span id='top'>치과위생사 박진아의 포트폴리오 사이트</span>
+# <span id='top'>치과위생사 포트폴리오 사이트</span>
 
 ### Project <a href="https://flexing1010.github.io/Jinah-s-Portfolio-Website/">사이트 바로가기</a>
 
-프리랜서 활동을 준비중인 치과위생사 박진아님의 의뢰로 만든 포트폴리오 사이트 입니다
+프리랜서 활동 중인 치과위생사의 의뢰로 만든 포트폴리오 사이트입니다.
 
-- 자바스크립트과, HTML, CSS를 사용하여 만든 사이트입니다.
+- JavaScript, HTML, CSS를 사용하여 만들었습니다.
 
 - 핸드폰, 태블릿, 컴퓨터에서의 사용을 고려한 반응형 사이트입니다.
 
