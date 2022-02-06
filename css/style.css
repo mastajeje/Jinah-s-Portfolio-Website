@@ -58,6 +58,14 @@ h2::before {
   pointer-events: none;
 }
 
+.notification {
+  color: crimson;
+  text-decoration: dashed;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  margin-top: 0.3rem;
+}
+
 .h2-container {
   border: 1px solid black;
   margin: 1.5em 1em;
