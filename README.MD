@@ -1,6 +1,6 @@
 # <span id='top'>치과위생사 포트폴리오 사이트</span>
 
-### Project <a href="https://flexing1010.github.io/Jinah-s-Portfolio-Website/">사이트 바로가기</a>
+### Project <a href="https://mastajeje.github.io/Jinah-s-Portfolio-Website/">사이트 바로가기</a>
 
 프리랜서 활동 중인 치과위생사의 의뢰로 만든 포트폴리오 사이트입니다.
 
